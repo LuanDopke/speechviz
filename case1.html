@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Load d3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script>
+        d3v3 = d3
+        window.d3 = null
+    </script>
+     <script type='text/javascript' src="https://d3js.org/d3.v4.min.js"></script>
+     <script>
+         d3v4 = d3
+         window.d3 = null
+     </script>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+
+
+    <div id="site-container">
+        <!-- Create a div where the graph will take place -->
+        <div class="quadro">
+            <h2>Iemocap - Ses01F_impro01.wav</h2>
+            <audio id="audiow0" class="box1" controls>
+                <source id="audioSrcw0" src="Ses01F_impro01.wav" type="audio/wav">
+            </audio>
+            <div id="legend">
+
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f9003f;"></div>
+                    <span class="legend-label">anger</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: orange;"></div>
+                    <span class="legend-label">happiness</span>
+                </div>
+                <!-- <div class="legend-item">
+                    <div class="legend-color" style="background-color: #a0bf48;"></div> ffc137
+                    <span class="legend-label">disgust</span>
+                </div> -->
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #00b2ff;"></div>
+                    <span class="legend-label">sadness</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #a0bf48;"></div>
+                    <span class="legend-label">disgust</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #ac3bff;"></div>
+                    <span class="legend-label">fear</span>
+                </div>
+            </div>
+        </div>
+        <div class="quadro22">
+            <h2 class="box1">Gantt Chart</h2>
+            <div id="sep" class="box1"></div>
+            <div class="box1" id="widget0_1"></div>
+            <p class="box1" id="transcrypt_w1">click to transcript</p>
+
+          <!--  <div id="widget0_1"></div>
+            <div id="widget0_2"><span>click to show chart</span></div>
+            <p class="box1" id="transcrypt_w0">click to transcrypt</p>-->
+        </div>
+        <div class="quadro10">
+            <div class="quadro2">
+                <h2 class="box5">Speaker Stats</h2>
+                <div id="sep" class="box5"></div>
+                <p>Russell's ring</p>
+                <p id="lblshowchart">click to show chart</p>
+
+                <div id="widget3_1"></div>
+                <div id="widget3_1_0"><span></span></div>
+            </div>
+            <div class="quadro4">
+                <h2 class="box4">Summary</h2>
+                <div id="sep" class="box4"></div>
+                <p>speech status (s)</p>
+                <p>main topics speaker 0 (s)</p>
+                <p>main topics speaker 1 (s)</p>
+                 <div id="widget3_6"></div>
+                <div id="widget3_4"></div>
+                <div id="widget3_5"></div>
+               
+            </div>
+            <!-- <p>wordcloud</p> -->
+          
+          
+            <!-- <div> RADAR EMOTION BETWEEN SPEAKERS
+                <div id="widget3_2"> </div>
+                <div id="legend2">
+                    <div class="legend-item2">
+                        <div class="legend-color2" style="background-color: #00800073;"></div>
+                        <span class="legend-label2">speaker 1</span>
+                    </div>
+                    <div class="legend-item2">
+                        <div class="legend-color2" style="background-color:#00008066;"></div>
+                        <span class="legend-label2">speaker 2</span>
+                    </div>
+                </div>
+            </div> 
+            <div id="widget3_3"></div>-->
+        
+        </div>
+        <!-- <div class="quadro4">
+            <h2 class="box4">Summary</h2>
+            <div id="sep" class="box4"></div>
+            <p>Spoke time</p>
+            <p>Emotion speaker 0</p>
+            <p>Emotion speaker 1</p>
+
+            <div id="widget4_1"></div>
+            <div id="widget4_2"></div>
+            <div id="widget4_3"></div>
+        </div> -->
+        <!-- <div class="quadro2">
+            <h2 class="box1">Speaker 1</h2>
+            <audio class="box1" controls>
+                <source id="audioSrcw1" src="4065.wav" type="audio/wav">
+            </audio>
+            <div id="widget1_1"></div>
+            <div id="widget1_2"><span>click to show chart</span></div>
+            <p class="box1" id="transcrypt_w1">click to transcrypt</p>
+        </div>
+        <div class="quadro2">
+            <h2 class="box1">Speaker 2</h2>
+            <audio class="box1" controls>
+                <source id="audioSrcw2" src="4065.wav" type="audio/wav">
+            </audio>
+            <div id="widget2_1"></div>
+            <div id="widget2_2"><span>click to show chart</span></div>
+            <p class="box1" id="transcrypt_w2">click to transcrypt</p>
+        </div> -->
+    </div>
+    <script src="viz.js"></script>
+</body>
+
+</html>

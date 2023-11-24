@@ -1,0 +1,286 @@
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family:monospace;
+  font-size: 10px;
+}
+
+.laneText{
+  color: black;
+}
+
+.tick line {
+  stroke: #020507;
+  opacity: 0.5;
+}
+
+g path.domain {
+  stroke: #4f4f4f;
+}
+
+* {
+  font-family: monospace;
+}
+
+.quadro {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 20px 0px #0000002e;
+  background-color: rgb(247, 247, 247);
+  margin: auto auto;
+  text-align: center;
+   width: 99.45%;
+  /* width: 80%;
+  height: 20%; */
+}
+
+.quadro2 {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  justify-content: center;
+  margin: 0.5em auto;
+  align-items: center;
+  box-shadow: 1px 2px 20px 0px #0000002e;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  width: 99%;
+}
+
+.quadro22 {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  justify-content: center;
+  margin: 1em auto;
+  align-items: center;
+  box-shadow: 1px 2px 20px 0px #0000002e;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  width: 99.45%;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+table {
+  margin: auto;
+  text-align: left;
+  border-spacing: 50px 0;
+}
+
+/* table tr td {
+  padding-right: 50px;
+} */
+
+.quadro3 {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+  justify-content: center;
+  margin: 1.5em auto;
+  align-items: center;
+  box-shadow: 1px 2px 20px 0px #0000002e;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+
+.quadro10 {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  justify-content: center;
+}
+
+.quadro11 {
+  display: grid;
+  grid-template-columns: 32.5fr 65fr;
+
+}
+
+.quadro4 {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  justify-content: center;
+  width: 99%;
+  margin: 0.5em auto;
+  align-items: center;
+  box-shadow: 1px 2px 20px 0px #0000002e;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+
+.quadro7 {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 5fr;
+  justify-content: center;
+  width: 99%;
+  margin: 0.5em auto;
+  align-items: center;
+  box-shadow: 1px 2px 20px 0px #0000002e;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+
+.box7 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.box3 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.box5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box6 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+body {
+  background-color: rgb(222, 230, 238);
+}
+
+h2 {
+  margin-bottom: 0;
+  font-family: monospace;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 0.7em;
+  height: 2em;
+  background-color: #f1f3f4;
+}
+
+#sep {
+  width: 100%;
+  margin: 0.7em 0;
+  height: 0.3em;
+  background-color: #595959;
+}
+
+.quadro22 p {
+  text-align: start;
+  margin: 0 1em 0 1em;
+  background-color: #f1f3f4;
+  padding: 1em;
+}
+
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-left: 6em;
+  margin-bottom: 8px;
+  width: calc(20% - 6em); /* Distribui igualmente em 5 colunas com margem de 10px */
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.legend-label {
+  font-size: 14px;
+}
+
+.legend-item2 {
+  display: flex;
+  align-items: center;
+  margin-left: 2.2em;
+  margin-bottom: 8px;
+  width: calc(50% - 2.2em); /* Distribui igualmente em 5 colunas com margem de 10px */
+}
+
+.legend-color2 {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.legend-label2 {
+  font-size: 14px;
+}
+
+#legend2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.brush .extent {
+  stroke: #b6b8b9;
+  fill: #57585b;
+  fill-opacity: .365;
+  stroke-width: .2;
+}
+
+.laneImg {
+  border-radius: 25px;
+}
+
+.currentLine {
+  stroke-width: 2;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  width: 120px;
+  height: 28px;
+  padding: 3px;
+  font: 12px monospace;
+  background: #ffffff;
+  border: 0px;
+  pointer-events: none;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.selection {
+  fill: #a1a1a1;
+  stroke: #f7f7f7;
+  /* stroke-width: 1.5px; */
+  /* fill-opacity: 0.5; */
+}
+
+.currentLine{
+  stroke: darkgrey;
+}
